@@ -29,3 +29,26 @@ if(randomNumber == '1'){
 }
 
 printMessage('Mój ruch to: ' + computerMove);
+
+if(computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+} if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Ja wygrywam!');
+} if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Mamy remis');
+} if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');
+} if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Mamy remis');
+} if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ja wygrywam');
+} if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Ja wygrywam');
+} if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+} if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Mamy remis');
+}
+if(playerMove == 'nieznany ruch'){
+    printMessage('Wpisałeś złą liczbe cymbale');
+}

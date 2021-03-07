@@ -1,2 +1,31 @@
+body {
+  background-color: #dcdde1;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MifQ== */
+.container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#buttons img {
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 25%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 80px;
+}
+
+.instruction {
+  font-size: 20px;
+}
+
+.welcomming {
+  font-size: 30px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLHlCQUF5QjtBQ0M3Qjs7QURDQTtFQUNJLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsY0FBYztFQUNkLGtCQUFrQjtBQ0V0Qjs7QURBQTtFQUNJLFlBQVk7RUFDWixhQUFhO0VBQ2IsZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixhQUFhO0FDR2pCOztBRERBO0VBQ0ksZUFBZTtBQ0luQjs7QURGQTtFQUNJLGVBQWU7QUNLbkI7O0FESEE7RUFDSSxlQUFlO0FDTW5CIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */

@@ -1,4 +1,5 @@
-function playgame(){
+function playGame(playerInput){
+    clearMessages(); 
     function getMoveName(argMoveId){
         if(argMoveId == 1){
         return 'kamień';
@@ -39,7 +40,7 @@ function playgame(){
     }
 
 
-    let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.');
+    /* let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.'); */
 
     console.log('Gracz wpisał: ' + playerInput);
 
@@ -99,3 +100,22 @@ function playgame(){
     }
     */
 }
+function playRockClicked(){
+    playGame(1);
+  }
+let playRock = document.getElementById('play-rock');
+
+playRock.addEventListener('click', playRockClicked);
+
+function playPaperClicked(){
+    playGame(2);
+  }
+let playPaper = document.getElementById('play-paper');
+
+playPaper.addEventListener('click', playPaperClicked);
+function playScissorsClicked(){
+    playGame(3);
+  }
+let playScissors = document.getElementById('play-scissors');
+
+playScissors.addEventListener('click', playScissorsClicked);

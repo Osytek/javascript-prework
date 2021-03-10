@@ -1,10 +1,10 @@
-function printMessage(msg){
-	let div = document.createElement('div');
+{const printMessage = function(msg){
+	const div = document.createElement('div');
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
 
-function clearMessages(){
+const clearMessages = function(){
 	document.getElementById('messages').innerHTML = '';
 }
 
@@ -15,7 +15,7 @@ let playScissors = document.getElementById('play-scissors');
 let playerScore = 0;
 let computerScore = 0;
 
-function getMoveName(argMoveId){
+const getMoveName = function(argMoveId){
         if(argMoveId == 1){
         return 'kamień';
         }else if(argMoveId == 2){
@@ -28,10 +28,8 @@ function getMoveName(argMoveId){
         }
 }
 
-function displayResult(argComputerMove, argPlayerMove){
+const displayResult = function(argComputerMove, argPlayerMove){
         printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
-        /* zrobiłbym ifa i 2 else ify */
-        /* 3 opcje w jednym ifie połączone za pomocą () || () || () */
         if(argComputerMove == 'kamień' && argPlayerMove == 'papier' || argComputerMove == 'papier' && argPlayerMove == 'nożyce' || argComputerMove == 'nożyce' && argPlayerMove == 'kamień'){
         printMessage('Ty wygrywasz!');
 		playerScore++;
@@ -43,31 +41,32 @@ function displayResult(argComputerMove, argPlayerMove){
         }
  }
 
-function displayScore(){
-	let msg = playerScore + " : " + computerScore;
+const displayScore = function(){
+	const msg = playerScore + " : " + computerScore;
 	document.getElementById('results').innerHTML = msg;
 }
 
-function playGame(playerInput){
+const playGame = function(playerInput){
     clearMessages();
     console.log('Gracz wpisał: ' + playerInput);
-    let argPlayerMove = getMoveName(playerInput);
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const argPlayerMove = getMoveName(playerInput);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log('Wylosowana liczba to: ' + randomNumber);
-    let argComputerMove = getMoveName(randomNumber);
+    const argComputerMove = getMoveName(randomNumber);
     console.log('moves:', argComputerMove, argPlayerMove);
     displayResult(argComputerMove, argPlayerMove);
 	  displayScore();
 }
 
-function playRockClicked(){ playGame(1); }
+const playRockClicked = function(){ playGame(1); }
 playRock.addEventListener('click', playRockClicked);
 
-function playPaperClicked(){ playGame(2); }
+const playPaperClicked = function(){ playGame(2); }
 playPaper.addEventListener('click', playPaperClicked);
 
-function playScissorsClicked(){ playGame(3);}
+const playScissorsClicked = function(){ playGame(3);}
 playScissors.addEventListener('click', playScissorsClicked);
+}
 
 
 
